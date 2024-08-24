@@ -9,6 +9,7 @@
         align-items: center;
         cursor: grab;
         border-bottom: 4px solid red;
+        overflow: hidden;
     }
 
     .watch_box img {
@@ -16,6 +17,11 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: all 0.5s ease-in;
+    }
+
+    .watch_box img:hover {
+        transform: scale(1.3);
     }
 
     .watch_box::before {
@@ -34,5 +40,6 @@
         color: #fff;
         margin-top: 0px !important;
         z-index: 1;
+        display: none;
     }
 }
